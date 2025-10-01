@@ -3,7 +3,7 @@ import PocketBase from 'pocketbase'
 
 
 
-const URL = "http://127.0.0.1:10000"
+const URL = "http://82.25.90.180:10000/"
 
 
 
