@@ -1,0 +1,116 @@
+/*
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+*/
+
+.slick-dots {
+  bottom: 10px;
+  list-style: none;
+  gap:10px;
+  display: flex !important;
+  justify-content: center;
+}/*
+.slick-track{
+
+  display: flex;
+  width: auto !important;
+  gap: 20px;
+  transform: none;
+}
+*/
+.slick-track{
+  display: flex !important;
+  gap:10px;
+}
+.slick-slide{
+  width: 150px !important;
+  height: 120px !important;
+}
+.slick-slide>div{
+  width: 150px;
+  height: 120px;
+}
+.slick-slide>div>div>img{
+  width: 150px;
+  height: 120px;
+}
+
+
+
+
+
+.slick-slider {
+  margin-bottom: 35px;
+}
+
+.irA{
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.irA>a{
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 3px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 10%;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.cuadriculavideosTab>div>img{
+
+  width: 150px;
+  height: 100px;
+
+}
+
+
+@media screen and (min-width:1024px){
+  /*
+  .slick-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .slick-track{
+    transform:none !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .slick-list{
+    width: 100%;
+  }*/
+  .tutorials{
+    width: 100%;
+
+  }
+  .tutorialsVideos{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-around;
+    
+  }
+
+}
+
+
+
+

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+/*iconos */
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+
+:root{
+    --medida-menu:329px;
+}
+
+.App-header{
+    position:fixed;
+    z-index:3;
+    
+
+    -webkit-box-shadow: 0px 6px 5px 0px var( --color-primaryTransparent);
+    -moz-box-shadow: 0px 6px 5px 0px var( --color-primaryTransparent);
+    box-shadow: 0px 6px 5px 0px var( --color-primaryTransparent);
+}
+
+.navComplet{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:var(--color-primary);
+    background-color: var(--background-primary);
+    
+}
+.nav{
+    width: 100%;
+    height: 90px;
+    display:flex;
+    justify-content: space-around;
+    
+   
+   
+    
+    /*----------------- aqui vamos a aumentar el margin bottom--------*/
+    
+}
+.nav>div:nth-child(1){
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav>div:nth-child(2){
+    width:auto;
+    font-size:40px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor:pointer;
+}
+.nav>div:nth-child(2)>i{
+    width:60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    border:solid 1px !important;
+    border:var(--color-primary);
+
+
+    /*! aqui vamos a cambiar algunas cosas*/
+   
+
+}
+.nav>div:nth-child(2)>i:hover{
+    color:var(--color-secondary);
+    border-radius:30px;
+    border:var(--color-secondary);
+    border:solid 1px;
+    background-color:var(--background-secondary);
+}
+
+/*-------------------------------------------------------------*/
+/*                    menu                               */
+
+
+.navList{
+    display:flex; /*display flex*/
+    background-color:var(--background-primary);
+    padding-top: 5px;
+    
+   
+    width:100%;
+    
+    justify-content: center;
+    position:relative;
+    padding-bottom:18px
+
+}
+.navList>ul{
+    width:80%;
+    background-color: var(--background-secondary);
+    height:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--letter-title);
+    padding:0px;
+    margin: 0px;
+    padding-bottom: 8px;
+    
+    
+ 
+    
+    
+}
+
+.navList>ul>a{
+    width:80%;
+    height: 100%;
+    display:flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-primary);
+    font-size:20px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color:var(--color-primary);
+    align-items: center;
+    
+    
+
+}
+.navList>ul>a:hover{
+    color:var(--color-secondary);
+    height: 100%;
+    
+}
+
+
+
+
+@media screen and (min-width:767px){
+    .navComplet{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+
+    }
+    .navComplet>div:nth-child(1){
+        width:100px;
+        display:flex;
+
+        
+    }
+    .navComplet>div:nth-child(1)>.nameLog{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navComplet>div:nth-child(2){
+        width:auto;
+        position: relative;
+    }
+
+    .menuNavbar{
+        display:none !important;
+    }
+    
+    .navList{
+        display:flex; /*display flex*/
+        top:0px;
+        width:auto;
+        padding-bottom:0px;        
+    }
+    .navList>ul{
+        
+        padding-left:10px;
+        height:100%;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:10px;
+        font-family: var(--letter-title);
+        padding-top:0px;
+        border-radius:0px;
+        background:none;
+        align-items: center;
+
+    }
+    
+    .navList>ul>a{
+        list-style: none;
+        display:flex;
+        justify-content: flex-start;
+        cursor: pointer;
+        border-bottom: 0;
+        font-size:20px;
+        width: 200px;
+        padding-top:5px;
+        border-radius: 10%;
+        justify-content: center;
+        
+       
+    }
+    .navList>ul>a:hover{
+        color:var(--color-secondary);
+       
+    }
+    @media screen and (min-width:1024px){
+        .App-header{
+            width:100%;
+            display:flex;
+            align-items: center;
+        }
+        .navComplet{
+            width:80%;
+            display:grid;
+            grid-template-columns: 10% 90%;
+            gap:10px;
+        }
+        
+    }
+
+
+
+
+
+    
+  }
+  
+  

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+
+#menu-active{
+    top:100px;
+}
+
+
+
+
+.mainOne{
+    padding-top:200px;
+    width: 100%;
+    height: auto;
+    background-color:var(--background-secondary);
+    color:var(--color-primary);
+    padding-bottom:100px;
+}
+.mainOnephoto{
+    display:none;
+    width:330px;
+    height: 540px;
+}
+.mainOne-container{
+    width: 100%;
+    height: auto;
+}
+.nameFondo{
+    height: 80%;
+    margin-top: -50px;
+    display:flex;
+    flex-direction: column;
+}
+.Namefondo{
+    color: var(--color-primaryTransparent);
+    width: 80%;
+    height:20px;
+    font-size: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+    transform: rotate(-35deg);
+    left:1%;
+    top:200px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing:8px;
+    position: relative;
+}
+.mainOneContenido{
+    margin-top:-100px;
+    z-index: 1;
+    position: relative;
+    
+}
+.welcome{
+    font-family: var(--letter-title);
+    font-size: 25px;
+}
+.mainOneContenidoName{
+    font-size:35px;
+    letter-spacing:2px;   
+    font-family: 'Concert One', cursive;
+}
+.mainOneContenidoDescripcion{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.mainOneContenidoOpciones{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+
+}
+.mainOneContenidoOpciones > div:nth-child(1){
+    width:135px;
+    height:50px;
+    border:3px solid var(--color-secondary);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+.mainOneContenidoOpciones > div:hover{
+    background-color:var(--color-secondary);
+    cursor:pointer;
+}
+.mainOneContenidoOpciones > div:nth-child(2){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid var(--color-secondary);
+    width:135px;
+    height:50px;
+}
+@media screen and (min-width:767px){
+    .mainOne{
+        display:flex;
+        justify-content: center;
+
+    }
+    .mainOne-container{
+        margin-top:30px;
+        width:90%;
+        display: flex;
+
+    }
+    .mainOnephoto{
+
+        display:flex !important;
+        z-index: 1;
+    }
+    .nameFondo{
+        height: 80%;
+        margin-top: -150px;
+        display:flex;
+        flex-direction: column;
+    }
+    .Namefondo{
+        width:auto;
+        font-size: 95px;
+        transform: rotate(-30deg);
+        height: 120px;
+        left: 4%;
+        letter-spacing: 12px;
+    }
+
+}
+@media screen and (min-width:1024px){
+    
+    .Namefondo{
+        left: 8%;
+        top:250px;
+        font-size: 120px;
+        letter-spacing: 20px;
+    }
+
+}
+@media screen and (min-width:1700px){
+    .mainOne{
+        display:flex;
+        justify-content: center;
+
+    }
+    .Namefondo{
+        left: 1%;
+        top:250px;
+        font-size: 120px;
+        letter-spacing: 20px;
+    }
+
+    .mainOne-container{
+        width:70%;
+        display: flex;
+
+    }
+}

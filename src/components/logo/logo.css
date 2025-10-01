@@ -1,0 +1,34 @@
+/* beginning name */
+.name{
+
+    display:flex;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+}
+.name> div:nth-child(1){
+    font-size: 3em;
+    color:var(--color-secondary);
+
+}
+.name> div:nth-child(2){
+    font-size: 1em;
+    color:rgb(104, 104, 104)
+
+}
+.name> div:nth-child(3){
+    font-size: 3em;
+    color:rgb(255, 213, 3)
+
+}
+.name> div:nth-child(4){
+    font-size: 3em;
+    color:rgb(44, 7, 14)
+
+}
+.name> div:nth-child(5){
+    font-size: 1em;
+    color:var(--color-secondary);
+
+}
+
+/*end name */

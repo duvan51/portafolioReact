@@ -1,0 +1,13 @@
+.habilitiesBlands{
+    width: 100%;
+    background:var(--background-secondary);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.habilitiesBlands>div:nth-child(1){
+    display:flex;
+    justify-content: center;
+}

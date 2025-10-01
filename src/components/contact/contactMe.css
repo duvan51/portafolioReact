@@ -1,0 +1,129 @@
+.contactMe{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:var(--color-primary);
+
+}
+.contactMe >div:nth-child(1){
+    margin-top:-50px;
+    margin-bottom:30px;
+}
+.contactMe > .contactMeDescription{
+    margin-bottom:50px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    
+}
+.contactMe > .contactMeDescription > .contactMeDescriptionText{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width:450px;
+   
+}
+
+.contactMe > .contactMeDescription > .contactMeDescriptionText >div:nth-child(1){
+    color:var(--color-secondary);
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:1.2px;
+    font-family:var(--letter-text);
+}
+.contactMe > .contactMeDescription > .contactMeDescriptionText >div:nth-child(2){
+    font-family:var(--letter-title);
+    font-size:35px;
+
+}
+.contactMe > .contactMeDescription > .contactMeDescriptionText >div:nth-child(3){
+    font-family:var(--letter-text);
+    font-size:16px;
+    letter-spacing: 1.8px;
+
+}
+
+.contactMeInformation{
+    padding-top:10px;
+    padding-bottom:10px;
+    background:var(--background-secondary);
+    width:450px;
+    height: auto;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.contactMeInformation>div{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+    height: 80px;
+}
+/*iconos */
+.contactMeInformation>div>div:nth-child(1){
+    width:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactMeInformation>div>div:nth-child(1)>i{
+    color:var(--color-secondary);
+    font-size:25px;
+}
+/*LETTER*/
+.contactMeInformation>div>div:nth-child(2){
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    align-items: flex-start;
+}
+.contactMeInformation>div>div:nth-child(2)>div{
+    display:flex;
+    width:auto;
+
+}
+.contactMeInformation>div>div:nth-child(2)>div:nth-child(1){
+    font-family: var(--letter-title);
+    font-size:22px;
+    letter-spacing:1.2PX;
+}
+.contactMeInformation>div>div:nth-child(2)>div:nth-child(2){
+    font-family: var(--letter-text);
+    letter-spacing: 1.5px;
+}
+.qr{
+    display:none;
+}
+
+
+@media screen and (min-width:767px){
+    
+}
+@media screen and (min-width:1024px){
+    .contactMeInformation{
+        display:grid;
+        grid-template-columns: auto auto 400px;
+        flex-direction: row;
+        justify-content: center;
+        background: none;
+        width: 90%;
+    }
+    .contactMeInformation>div{
+        background:var(--background-secondary);
+        width:auto;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+@media screen and (min-width:1700px){
+    
+}

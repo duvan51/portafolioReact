@@ -1,0 +1,129 @@
+.aboutme{
+    padding-top: 60px;
+    padding-bottom: 60px;  
+    background-color: var(--background-secondary);
+    color : var(--color-primary);
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    align-items: center;
+
+}
+
+.aboutme> div:nth-child(1){
+    font-family: var(--letter-title);
+    font-size:50px;
+    margin-bottom: 30px;
+}
+.aboutme> div:nth-child(2){
+    font-family: var(--letter-text);
+    letter-spacing: 1px;
+
+} 
+/* start photo==================================*/
+
+.photo{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+
+}
+.photo > .photoDecoration{
+    width:auto;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.redondo{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: var(--background-secondary);
+    margin-left:-70px;
+    margin-top:-20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.redondo>.decoration{
+    width:60%;
+    height: 60%;
+ 
+    margin-left: -18px;
+    background-color: var(--color-secondary);
+    border-radius: 50% 0px 0px 100px;
+}
+/*end photo====================================*/
+
+.aboutmeInfo{
+    width: 90%;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+}
+.aboutmeInfo > h1{
+    font-family: var(--letter-title);
+    letter-spacing: 2px;
+}
+.aboutmeInfo>div:nth-child(2){
+    padding: 0px 20px 0px 20px;
+    text-align: justify;
+    font-family: var(--letter-text);
+    letter-spacing: 1px;
+}
+
+.aboutmeInfoPerson{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.aboutInfoPerson{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap:20px;
+}
+.aboutInfoPerson>div{
+    display: flex;
+    gap:20px;
+}
+.aboutInfoPerson>div>div:nth-child(1){
+    color:var(--color-secondary);
+    font-family: var(--letter-title);
+    letter-spacing: 2px;;
+    
+}
+.aboutInfoPerson>div>div:nth-child(2){
+    font-family: var(--letter-text)
+}
+.aboutInfoPerson>div>a:nth-child(2){
+    font-family: var(--letter-text);
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+
+
+.aboutmeInfoPhoto{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (min-width:1024px){
+    .aboutmeInfoPhoto{
+        width:80%;
+        display:flex;
+        flex-direction: row;
+        
+    }
+    
+
+}

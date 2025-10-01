@@ -1,0 +1,36 @@
+.mainOneContenidoRedes{
+    display:flex;
+    justify-content: center;
+}
+.mainOneContenidoRedes>ul{
+    align-items: center; 
+    width:350px !important;
+}
+.listRedes{
+    margin-top:0px;
+    padding-top: 10px;
+    height:150px;
+    gap:20px;
+    color:var(--color-primary);
+    display:flex;
+
+
+}
+
+.listRedes > a {
+    list-style: none;
+    color:var(--color-primary);
+    text-decoration: none;
+    width:40px;
+    height:40px;
+    border:3px solid var(--color-secondary);
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
+    font-size: 20px;
+}
+.listRedes > a:hover{
+    background-color:var(--color-secondary);
+}

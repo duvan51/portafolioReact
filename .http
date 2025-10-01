@@ -1,0 +1,12 @@
+# Solicitud POST para agregar un video a la colección "tutorials"
+POST https://your-pocketbase-url/api/collections/tutorials/records
+Content-Type: application/json
+
+
+
+{
+  "collectionId": "exampleId",    # Reemplazar con datos reales
+  "username": "exampleUser",      # Reemplazar con datos reales
+  "descripcion": "exampleDescription",  # Reemplazar con datos reales
+  "link": "exampleLink"           # Reemplazar con datos reales
+}

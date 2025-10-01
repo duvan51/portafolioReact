@@ -1,0 +1,49 @@
+
+{
+    "headers-colors":{
+        "color-black" : "black",
+        "color-pink": "pink",
+        "color-purple": "purple",
+        "color-ligth": "ligth",
+        "color-dark": "dark"
+    },
+    "headersMenu": {
+        "home": "home",
+        "menu-services": "services",
+        "menu-about": "about",
+        "menu-skills": "skills",
+        "menu-proyects": "proyects",
+        "menu-blog": "tutorials",
+        "menu-contct": "contact"
+
+    },
+    "main-one":{
+        "main-one-name": "i am",
+        "main-one-description": "I'm duvan aponte, full stack web developer, eager to learn and with different projects on the table",
+        "main-one-button-my-portafolio": "my briefcase",
+        "main-one-button-my-videos": "videos"
+    },
+    "main-services":{
+        "main-service": "service",
+        "main-service-title": "my services",
+        "main-service-description": "I currently offer my services in the different areas of development, giving as certificate and support the projects placed in the portfolio:"
+
+    },
+
+
+    "main-about-me":{
+        "about-me-title": "About Me",
+        "about-me-phrase": "Developer passionate about technology, with Entrepreneurship and Personal Brand. I love taking advantage of the possibilities offered by different languages ​​and technologies to achieve well-defined goals. with an inspiring phrase. If you imagine something, do it",
+        "about-me-description-title": "I am Colombian. I am currently a student of full stack web development in academia, I like everything that has to do with development, since I am passionate about it, I like to be in constant learning, learn from others, work as a team. I consider myself capable of taking any challenge and carrying it out.",
+        "abaut-me-description-name": "Name",
+        "abaut-me-description-email": "Email",
+        "abaut-me-description-Phone": "Phone",
+        "abaut-me-description-linkendln": "linkendln"
+
+    },
+    "main-proyects":{
+        "proyects-title": "Project Portfolio",
+        "proyects-description": "Below we will see a little of my projects, group and individual. with the respective technologies used"
+    }
+
+}
