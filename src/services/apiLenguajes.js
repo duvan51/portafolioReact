@@ -2,7 +2,7 @@ import PocketBase from 'pocketbase'
 
 
 
-const URL = "http://82.25.90.180:10000/"
+const URL = "https://api.desarrollandoando.fun/"
 
 
 

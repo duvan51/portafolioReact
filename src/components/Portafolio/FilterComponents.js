@@ -36,7 +36,7 @@ const FilterComponents = ({ infor }) => {
   }
 
   const backgroundStyle = {
-    backgroundImage: `url(http://127.0.0.1:10000/api/files/postsProyects/${data.id}/${data.fondoProyect})`,
+    backgroundImage: `url(https://api.desarrollandoando.fun/api/files/postsProyects/${data.id}/${data.fondoProyect})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "200px",
@@ -80,7 +80,7 @@ const FilterComponents = ({ infor }) => {
                 .map((lang) => (
                   <img
                     key={lang.id}
-                    src={`http://127.0.0.1:10000/api/files/lenguajesProyects/${lang.id}/${lang.image}`}
+                    src={`https://api.desarrollandoando.fun/api/files/lenguajesProyects/${lang.id}/${lang.image}`}
                     alt={lang.name}
                     className="img-thumbnail"
                     style={{

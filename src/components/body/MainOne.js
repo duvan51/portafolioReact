@@ -1,26 +1,24 @@
-import './mainOne.css';
-import servicesDataInfo from '../servicesTabs/servicesDataInfo';
-import Redes from '../redes/redes.js';
-import image from '../images/pef.png';
+import "./mainOne.css";
+import servicesDataInfo from "../servicesTabs/servicesDataInfo";
+import Redes from "../redes/redes.js";
+import image from "../images/pef.png";
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { useTheme } from "styled-components";
-
-
 
 const MainOne = () => {
   const { t } = useTranslation();
-  const nameUser = localStorage.getItem('user');
-     const theme = useTheme();
-
-
+  const nameUser = localStorage.getItem("user");
+  const theme = useTheme();
 
   return (
-    <section id="mainone" className="py-5  w-100" 
-      style={{ backgroundColor: theme.background }}>
+    <section
+      id="mainone"
+      className="py-5  w-100"
+      style={{ backgroundColor: theme.background }}
+    >
       <div className="container">
-        <div className="row align-items-center" >
-
+        <div className="row align-items-center">
           {/* Text & Socials */}
           <div className="col-lg-7 mb-4 mb-lg-0">
             <h1 className="display-4 fw-bold text-primary">
@@ -31,26 +29,31 @@ const MainOne = () => {
               <Redes />
             </div>
 
-            <p className="lead text-muted"
-                style={{ color: theme.colorPrimary }}
+            <p
+              className="lead text-muted"
+              style={{ color: theme.colorPrimary }}
             >
-              {t('mainOne.mainOneWelcome')} {nameUser}
+              {t("mainOne.mainOneWelcome")} {nameUser}
             </p>
 
-            <h2 className="h4 fw-semibold"
-                style={{ color: theme.colorPrimary }}
+            <h2
+              className="h4 fw-semibold"
+              style={{ color: theme.colorPrimary }}
             >
-              {t('mainOne.mainOneName')} {servicesDataInfo.first_name} {servicesDataInfo.last_name}
+              {t("mainOne.mainOneName")} {servicesDataInfo.first_name}{" "}
+              {servicesDataInfo.last_name}
             </h2>
 
-            <p style={{ color: theme.colorPrimary }}>{t('mainOne.mainOneDescription')}</p>
+            <p style={{ color: theme.colorPrimary }}>
+              {t("mainOne.mainOneDescription")}
+            </p>
 
             <div className="d-flex gap-3 mt-4 flex-wrap">
               <button className="btn btn-primary">
-                {t('mainOne.mainOneButtonMyPortafolio')}
+                {t("mainOne.mainOneButtonMyPortafolio")}
               </button>
               <button className="btn btn-outline-primary">
-                {t('mainOne.mainOneButtonMyVideos')}
+                {t("mainOne.mainOneButtonMyVideos")}
               </button>
             </div>
           </div>
@@ -58,10 +61,9 @@ const MainOne = () => {
           {/* Profile Image */}
           <div className="col-lg-5 text-center">
             <img
-              src={image}
+              src="https://codeagepk.com/wp-content/uploads/2019/04/home-gif.gif"
               alt="Profile"
-              className="img-fluid rounded-circle shadow"
-              style={{ maxWidth: '300px' }}
+              className="img-fluid shadow w-90 w-sm-50 w-md-75"
             />
           </div>
         </div>
