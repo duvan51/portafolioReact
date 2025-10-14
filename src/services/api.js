@@ -7,6 +7,11 @@ const URL = "https://api.desarrollandoando.fun/"
 
 
 
+const pb = new PocketBase(`${URL}`)
+export default pb;
+
+
+
 export const getTutorials = async ()=>{
 
 

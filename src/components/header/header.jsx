@@ -4,8 +4,14 @@ import { useNavigate } from "react-router-dom";
 import Nav from "../nav/Nav";
 import { themes } from "../../theme";
 
+import pb from "../../services/api.js";
+import { FaUserCircle } from "react-icons/fa";
+
 const Header = ({ setCurrentTheme }) => {
   const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [showMenu, setShowMenu] = useState(false);
+
   const { i18n } = useTranslation();
 
   // Tema inicial desde localStorage o por defecto "purple"
@@ -26,8 +32,19 @@ const Header = ({ setCurrentTheme }) => {
   };
 
   // Logout
-  const exit = () => {
-    localStorage.removeItem("user");
+  useEffect(() => {
+    // si ya hay sesión guardada, se carga automáticamente
+    setUser(pb.authStore.model);
+
+    // escucha cambios de autenticación en tiempo real
+    pb.authStore.onChange(() => {
+      setUser(pb.authStore.model);
+    });
+  }, []);
+
+  const handleLogout = () => {
+    pb.authStore.clear();
+    setUser(null);
     navigate("/");
   };
 
@@ -35,13 +52,54 @@ const Header = ({ setCurrentTheme }) => {
     <header className="bg-light border-bottom shadow-sm w-100">
       <div className="container py-2 d-flex justify-content-between align-items-center flex-wrap gap-3">
         {/* Botón de logout */}
-        <button className="btn btn-outline-danger" onClick={exit}>
-          <i className="fi fi-sr-sign-out-alt me-2"></i> Salir
-        </button>
+        <div className=" d-flex justify-content-start">
+          {user ? (
+            <div className="dropdown">
+              <button
+                className="btn  dropdown-toggle d-flex align-items-center"
+                type="button"
+                id="dropdownUser"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <FaUserCircle size={20} className="me-2" />
+                {user.name || user.username || user.email}
+              </button>
+              <ul
+                className="dropdown-menu dropdown-menu-end"
+                aria-labelledby="dropdownUser"
+              >
+                <li>
+                  <button
+                    className="dropdown-item"
+                    onClick={() => navigate("/adminHome")}
+                  >
+                    Mi perfil
+                  </button>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <button
+                    className="dropdown-item text-danger"
+                    onClick={handleLogout}
+                  >
+                    Cerrar sesión
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <button className="btn  d-flex " onClick={() => navigate("/login")}>
+              <FaUserCircle size={20} className="me-2" /> Iniciar sesión
+            </button>
+          )}
+        </div>
 
         {/* Temas */}
         <button
-          className="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2 fs-5"
+          className="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2 fs-6"
           onClick={() => setShowThemes(true)}
           style={{ cursor: "pointer" }}
         >
@@ -109,7 +167,7 @@ const Header = ({ setCurrentTheme }) => {
 
         {/* Selector de idioma */}
         <button
-          className="btn btn-outline-secondary d-flex align-items-center gap-2 px-4 py-2 fs-5"
+          className="btn btn-outline-secondary d-flex align-items-center gap-2 px-4 py-2 fs-6"
           onClick={() => setShowLang(true)}
           style={{ cursor: "pointer" }}
         >

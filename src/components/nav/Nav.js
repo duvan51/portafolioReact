@@ -50,14 +50,14 @@ const Nav = () => {
         <div className="container-fluid">
           <ul className="navbar-nav flex-md-row flex-column gap-3 mt-3 mt-md-0">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link"
-                href="#mainone"
+                to="/"
                 onClick={handleCloseMenu}
                 style={{ color: theme.colorPrimary }}
               >
                 {t("headersMenu.home").toUpperCase()}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a

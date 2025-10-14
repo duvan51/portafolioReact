@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getCategorias } from '../../services/apiFirestore.js';
+import { getCategorias } from '../../services/apiProyects.js';
 
 const Categorias = ({ dataCategorias }) => {
   const [categorias, setCategorias] = useState([]);
@@ -11,6 +11,7 @@ const Categorias = ({ dataCategorias }) => {
     getCategorias()
       .then((data) => {
         setCategorias(data);
+        console.log("datas---->",data)
       })
       .catch((error) => {
         console.error(error);

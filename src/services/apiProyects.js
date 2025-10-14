@@ -33,6 +33,17 @@ export const createProyect = async (data)=>{
         throw err
     }
 }
+export const updateProyect = async (id, data) => {   
+  try {
+    const pb = new PocketBase(`${URL}`);
+    const record = await pb.collection("postsProyects").update(id, data);
+    return record;
+  } catch (err) {
+    console.log("❌ Error al actualizar el proyecto:", err);
+    throw err;
+  }
+};
+
 
 
 
@@ -51,6 +62,19 @@ export const getCategorias = async ()=>{
         throw err;
     }
 }
+
+export const deleteCategorias = async (id)=>{
+    try{
+        const pb = new PocketBase(`${URL}`)
+        const records = await pb.collection('postsProyects').delete(id);
+        return records
+    }
+    catch(err){
+        console.error("error al obtener los productos: ", err)
+        throw err;
+    }
+}
+
 
 
 

@@ -25,7 +25,7 @@ const FilterComponents = ({ infor }) => {
       });
   }, []);
 
-  console.log(lenguajes);
+ // console.log(lenguajes);
 
   useEffect(() => {
     setData(infor);
